@@ -1,0 +1,24 @@
+.main-container {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__strona {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__space {
+    // width: 1600;
+    border-bottom: 1px solid var(--kolor-margines-poziomy);
+  }
+
+  //   &__heading {
+  //     display: flex;
+  //     background-color: var(--kolor-standard);
+  //     align-items: center;
+  //     padding-top: 24px;
+  //     padding-bottom: 25px;
+  //   }
+}

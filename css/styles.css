@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --kolor-domyslny: #212121;
   --kolor-logo: #2196f3;
   --kolor-kontakt: #757575;
@@ -62,13 +62,13 @@ footer {
   background-color: var(--kolor-stopka);
   color: var(--kolor-standard);
   padding: 60px 0px;
-}
+} */
 
-.container {
+/* .container {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .strona {
   width: 1200px;

@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--kolor-standard);
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--kolor-standard);
+}
+
+img {
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+a,
+button,
+.kolo-biale,
+.kolo,
+.box2,
+.wiersz-obrazow > div {
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--kolor-stopka);
+  color: var(--kolor-standard);
+  padding: 60px 0px;
+}
