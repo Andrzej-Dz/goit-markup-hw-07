@@ -69,11 +69,18 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
-.main-container__strona {
+.main-container__site {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 .main-container__space {
   border-bottom: 1px solid var(--kolor-margines-poziomy);
+}
+.main-container__heading {
+  display: flex;
+  background-color: var(--kolor-standard);
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }/*# sourceMappingURL=main.min.css.map */
