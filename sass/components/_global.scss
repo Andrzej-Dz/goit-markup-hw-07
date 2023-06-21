@@ -36,10 +36,11 @@ button {
 
 a,
 button,
-.kolo-biale,
-.kolo,
+.team__white-circle,
+.foooter__circle,
 .box2,
-.wiersz-obrazow > div {
+.we-do__pictures,
+.sec-portf__pictures > div {
   cursor: pointer;
 }
 
@@ -48,3 +49,71 @@ footer {
   color: var(--kolor-standard);
   padding: 60px 0px;
 }
+
+.main-container {
+  display: block;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin site {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin circle {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@mixin circlehf {
+  background-color: var(--kolor-logo);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--f-czasu);
+}
+
+@mixin icon-social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+@mixin space-down {
+  padding-bottom: 94px;
+}
+
+@mixin space {
+  padding: 94px 0px;
+}
+
+@mixin pictures {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@mixin pictures-d-h {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--f-czasu);
+}
+
+/* .wiersz-obrazow > div:hover .overlay,
+.wiersz-obrazow > div:focus .overlay {
+  transform: translatex(0%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--f-czasu);
+} */

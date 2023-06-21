@@ -16,40 +16,45 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./sass/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="container">
-    <header class="odstep">
-      <div class="strona naglowek">
-        <a class="logo logo-margines-lewy" href="index.html">
+    <header class="main-header__space">
+      <div class="main-header__site main-header__heading">
+        <a
+          class="main-header__logo main-header__logo-margin-left"
+          href="index.html"
+        >
           <p>Web</p>
-          <p class="logo-stopka-gora">Studio</p>
+          <p class="main-header__logo-top">Studio</p>
         </a>
-        <nav class="nawigator" style="padding-left: 93px">
-          <a class="link" href="index.html">Agencja</a>
+        <nav class="main-header__navigation" style="padding-left: 93px">
+          <a class="main-header__link" href="index.html">Agencja</a>
           <a
-            class="link link-aktywny"
+            class="main-header__link main-header__link-activ"
             href="portfolio.html"
             style="margin-left: 46px"
             >Portfolio</a
           >
-          <a class="link" href="#" style="margin-left: 46px">Kontakty</a>
+          <a class="main-header__link" href="#" style="margin-left: 46px"
+            >Kontakty</a
+          >
         </nav>
         <a
-          class="kontakt"
+          class="main-header__contact"
           href="mailto:info@devstudio.com"
           style="margin-left: 345px"
         >
-          <div class="kontakt-icon">
+          <div class="main-header__contact-icon">
             <svg width="16" height="12">
               <use href="./images/icons.svg#icon-mail-koperta"></use>
             </svg>
             <p>info@devstudio.com</p>
           </div>
         </a>
-        <a class="kontakt" href="#" style="margin-left: 30px">
-          <div class="kontakt-icon">
+        <a class="main-header__contact" href="#" style="margin-left: 30px">
+          <div class="main-header__contact-icon">
             <svg width="10" height="16">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -58,18 +63,19 @@
         </a>
       </div>
     </header>
-    <main class="strona odstep-sekcji">
-      <div class="wiersz-przyciskow">
-        <button class="przycisk przycisk-aktywny">Wszystkie</button>
-        <button class="przycisk">Strony</button>
-        <button class="przycisk">Aplikacje</button>
-        <button class="przycisk">Dizajn</button>
-        <button class="przycisk">Marketing</button>
+    <main class="sec-portf__site sec-portf__space">
+      <div class="sec-portf__buttons">
+        <button class="btn-portf">Wszystkie</button>
+        <button class="btn-portf">Strony</button>
+        <button class="btn-portf">Aplikacje</button>
+        <button class="btn-portf">Dizajn</button>
+        <button class="btn-portf">Marketing</button>
       </div>
-      <div class="kolumna-obrazow">
-        <div class="wiersz-obrazow">
+      <div class="sec-portf__column">
+        <div class="sec-portf__pictures">
+          <!-- teraz jest wiersz -obrazow klaśą ==>>   "we-do__pictures"  i nową klasę dopisać do GLOBAL -->
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/technocrack.jpg" alt="pict1-1" />
               <div class="overlay">
                 <p>
@@ -85,10 +91,8 @@
               <p class="obraz-opis">Strona internetowa</p>
             </div>
           </div>
-          <!-- ======================================================================= -->
-
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/new_orlean.jpg" alt="pict2-1" />
               <div class="overlay">
                 <p>
@@ -106,7 +110,7 @@
           </div>
 
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/seafood.jpg" alt="pict3-1" />
               <div class="overlay">
                 <p>
@@ -123,9 +127,10 @@
             </div>
           </div>
         </div>
-        <div class="wiersz-obrazow">
+        <div class="sec-portf__pictures">
+          <!-- teraz jest wiersz -obrazow klaśą ==>>   "we-do__pictures"  i nową klasę dopisać do GLOBAL -->
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/sluchawki.jpg" alt="pict2-1" />
               <div class="overlay">
                 <p>
@@ -142,7 +147,7 @@
             </div>
           </div>
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/boxes.jpg" alt="pict2-2" />
               <div class="overlay">
                 <p>
@@ -159,7 +164,7 @@
             </div>
           </div>
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/computer.jpg" alt="pict2-3" />
               <div class="overlay">
                 <p>
@@ -176,9 +181,10 @@
             </div>
           </div>
         </div>
-        <div class="wiersz-obrazow">
+        <div class="sec-portf__pictures">
+          <!-- teraz jest wiersz -obrazow klaśą ==>>   "we-do__pictures"  i nową klasę dopisać do GLOBAL -->
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/magazyn_ltd.jpg" alt="pict3-1" />
               <div class="overlay">
                 <p>
@@ -195,7 +201,7 @@
             </div>
           </div>
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/projekt.jpg" alt="pict3-2" />
               <div class="overlay">
                 <p>
@@ -212,7 +218,7 @@
             </div>
           </div>
           <div>
-            <div class="obraz">
+            <div class="sec-portf__picture">
               <img src="./images/growing.jpg" alt="pict3-3" />
               <div class="overlay">
                 <p>
@@ -232,43 +238,49 @@
       </div>
     </main>
     <footer>
-      <div class="stopka strona">
+      <div class="foooter foooter__site">
         <div>
-          <div class="logo">
+          <div class="foooter__logo">
             <p>Web</p>
-            <p class="logo-stopka-dol">Studio</p>
+            <p class="foooter__logo-bottom">Studio</p>
           </div>
           <address>
-            <p class="kontakt kontakt-adres">
+            <p class="foooter__contact foooter__contact-address">
               m. Warszawa, Aleje Jerozolimskie 21
             </p>
-            <p class="kontakt kontakt-stopka" style="padding-top: 8px">
+            <p
+              class="foooter__contact foooter__contact-details"
+              style="padding-top: 8px"
+            >
               info@devstudio.com
             </p>
-            <p class="kontakt kontakt-stopka" style="padding-top: 8px">
+            <p
+              class="foooter__contact foooter__contact-details"
+              style="padding-top: 8px"
+            >
               +48 111 111 111
             </p>
           </address>
         </div>
         <div>
-          <p class="stopka-2">DOŁĄCZ DO NAS</p>
-          <div class="icon-social-media-stopka">
-            <div class="kolo">
+          <p class="foooter__join-us">DOŁĄCZ DO NAS</p>
+          <div class="foooter__icon-social-media">
+            <div class="foooter__circle">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </div>
-            <div class="kolo">
+            <div class="foooter__circle">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </div>
-            <div class="kolo">
+            <div class="foooter__circle">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </div>
-            <div class="kolo">
+            <div class="foooter__circle">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
@@ -276,17 +288,17 @@
           </div>
         </div>
         <div style="margin-left: 8px">
-          <p class="stopka-2">ZAPISZ SIĘ DO NEWSLETTERA</p>
-          <div class="zapisz-sie">
-            <div class="newsletter">
+          <p class="foooter__join-us">ZAPISZ SIĘ DO NEWSLETTERA</p>
+          <div class="foooter__sign-up">
+            <div class="foooter__newsletter">
               <form>
                 <label> E-mail </label>
               </form>
             </div>
             <div>
-              <button class="przycisk-zapisz-sie" type="submit">
+              <button class="btn-sign" type="submit">
                 Zapisz się
-                <svg class="icon-zapisz-sie" width="24" height="24">
+                <svg class="btn__icon-sign" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>

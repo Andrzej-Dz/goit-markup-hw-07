@@ -1,0 +1,42 @@
+.custom {
+  &__space {
+    padding: 94px 0px;
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-bottom: 50px;
+  }
+
+  &__table {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__box2 {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--kolor-ikon);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    fill: var(--kolor-ikon);
+  }
+
+  &__box2:hover,
+  &__box2:focus {
+    border-color: var(--kolor-logo);
+    fill: var(--kolor-logo);
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--f-czasu);
+  }
+}

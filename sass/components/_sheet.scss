@@ -1,0 +1,122 @@
+.sheet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(-- --kolor-domyslny);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 4px;
+  }
+
+  &__form > label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--kolor-kontakt);
+    border-color: var(--kolor-kontakt);
+    width: 100%;
+  }
+
+  &__form-field {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    margin-bottom: 6px;
+    padding: 0px 15px;
+    gap: 15px;
+  }
+
+  &__form-field > input,
+  &__form textarea {
+    width: 100%;
+    border: 0px solid;
+  }
+
+  &__form-field > input:focus,
+  &__form textarea:focus {
+    outline: none;
+  }
+
+  &__form textarea {
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 100%;
+    text-align: top left;
+  }
+
+  &__form textarea {
+    resize: none;
+    height: 120px;
+  }
+
+  &__regulations {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    color: var(--kolor-kontakt);
+    width: 100%;
+    gap: 9px;
+    padding-left: 15px;
+    align-items: center;
+  }
+
+  &__regulations > input {
+    width: auto;
+    margin-bottom: 0px;
+  }
+
+  &__regulations a {
+    /* text-decoration: none; */
+    color: var(--kolor-logo);
+  }
+
+  &__form-field:hover,
+  &__form-field:focus,
+  &__form textarea:hover,
+  &__form textarea:focus {
+    border-color: var(--kolor-logo);
+    fill: var(--kolor-logo);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--f-czasu);
+  }
+}
