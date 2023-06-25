@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index-7</title>
+    <title>Index-7-ZMIANY</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +16,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./sass/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="main-container">
-    <header class="main-header__space">
+    <header class="main-header">
       <div class="main-header__site main-header__heading">
         <a
           class="main-header__logo main-header__logo-margin-left"
@@ -78,7 +77,7 @@
       <div
         class="section-ipsum__site section-ipsum__table-ipsum section-ipsum__space"
       >
-        <div style="color: var(--kolor-domyslny)">
+        <div style="color: var(--color-default)">
           <div class="section-ipsum__box">
             <svg class="section-ipsum__icon" width="65.32" height="70">
               <use href="./images/icons.svg#icon-antena"></use>
@@ -141,7 +140,7 @@
         </div>
       </section>
 
-      <section class="team__space" style="background: #f5f4fa">
+      <section class="team" style="background: #f5f4fa">
         <h2 class="team__header">Nasz Zespół</h2>
         <div class="team__group">
           <div>
@@ -274,35 +273,35 @@
           </div>
         </div>
       </section>
-      <section class="custom__space">
-        <h2 class="custom__header">Nasi klienci</h2>
-        <div class="custom__table">
-          <div class="custom__box2">
+      <section class="our-customers">
+        <h2 class="our-customers__header">Nasi klienci</h2>
+        <div class="our-customers__table">
+          <div class="our-customers__box2">
             <svg width="105" height="60">
               <use href="./images/icons.svg#icon-Logoklient-1"></use>
             </svg>
           </div>
-          <div class="custom__box2">
+          <div class="our-customers__box2">
             <svg width="105" height="60">
               <use href="./images/icons.svg#icon-Logoklient-2"></use>
             </svg>
           </div>
-          <div class="custom__box2">
+          <div class="our-customers__box2">
             <svg width="105" height="60">
               <use href=" ./images/icons.svg#icon-Logoklient-3"></use>
             </svg>
           </div>
-          <div class="custom__box2">
+          <div class="our-customers__box2">
             <svg width="105" height="60">
               <use href="./images/icons.svg#icon-Logoklient-4"></use>
             </svg>
           </div>
-          <div class="custom__box2">
+          <div class="our-customers__box2">
             <svg width="105" height="60">
               <use href="./images/icons.svg#icon-Logoklient-5"></use>
             </svg>
           </div>
-          <div class="custom__box2">
+          <div class="our-customers__box2">
             <svg width="105" height="60">
               <use href="./images/icons.svg#icon-Logoklient-6"></use>
             </svg>
@@ -382,40 +381,72 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
-        <p class="sheet__header">Zostaw swoje dane w formularzu poniżej</p>
-        <form class="sheet__form">
-          <label> Imie </label>
-          <div class="sheet__form-field">
-            <svg width="15" height="15">
-              <use href="./images/icons.svg#icon-user"></use>
-            </svg>
-            <input type="text" name="imie" />
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="10" height="10">
+            <use href="./images/icons.svg#icon-vector-x"></use>
+          </svg>
+        </button>
+        <p class="modal__header">Zostaw swoje dane w formularzu poniżej</p>
+        <form class="form">
+          <div class="form__field">
+            <label for="input-imie">Imie</label>
+            <div>
+              <svg width="15" height="15">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              <input type="text" name="imie" id="input-imie" />
+            </div>
           </div>
-          <label> Telefon </label>
-          <div class="sheet__form-field">
-            <svg width="15" height="15">
-              <use href="./images/icons.svg#icon-telefon"></use>
-            </svg>
-            <input type="tel" name="telefon" />
+
+          <div class="form__field">
+            <label for="input-telefon">Telefon</label>
+            <div>
+              <svg width="15" height="15">
+                <use href="./images/icons.svg#icon-telefon"></use>
+              </svg>
+              <input type="tel" name="telefon" id="input-telefon" />
+            </div>
           </div>
-          <label> Email </label>
-          <div class="sheet__form-field">
-            <svg width="15" height="15">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            <input type="email" name="email" />
+
+          <div class="form__field">
+            <label for="input-email">Email</label>
+            <div>
+              <svg width="15" height="15">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              <input type="email" name="email" id="input-email" />
+            </div>
           </div>
-          <label> Komentarz </label>
-          <textarea
-            name="komentarz"
-            placeholder="Wprowadź tekst ..."
-          ></textarea>
-          <div class="sheet__regulations">
-            <input type="checkbox" name="regulamin" value="akcept" required />
+
+          <div class="form__field">
+            <label for="text-komentarz">Komentarz</label>
+            <textarea
+              name="komentarz"
+              id="text-komentarz"
+              placeholder="Wprowadź tekst ..."
+            ></textarea>
+          </div>
+
+          <div class="form__regulation">
             <label>
-              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-              <a href="#">Politykę Prywatności.</a>
+              <input
+                class="form__checkbox-hidden"
+                type="checkbox"
+                name="regulamin"
+                value="akcept"
+                required
+              />
+              <svg class="form__checkbox-empty" width="16" height="15">
+                <use href="./images/icons.svg#icon-check-box"></use>
+              </svg>
+              <svg class="form__checkbox-accepted" width="16" height="15">
+                <use href="./images/icons.svg#icon-check-box-transp"></use>
+              </svg>
+              <span class="form__checkbox-space">
+                Oświadczam iż akceptuję
+                <a href="#" tabindex="-1">Regulamin</a> i
+                <a href="#" tabindex="-1">Politykę Prywatności.</a>
+              </span>
             </label>
           </div>
         </form>

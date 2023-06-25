@@ -1,3 +1,5 @@
+$xyz: 44px;
+
 .foooter {
   display: flex;
   padding: 0px 15px;
@@ -16,11 +18,11 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: var(--kolor-logo);
+    color: var(--color-logo);
   }
 
   &__logo-bottom {
-    color: var(--kolor-standard);
+    color: var(--color-standard);
   }
 
   &__contact {
@@ -31,7 +33,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: var(--kolor-kontakt);
+    color: var(--color-contact);
   }
 
   &__contact-address {
@@ -40,7 +42,7 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--color-standard);
   }
 
   &__contact-details {
@@ -54,21 +56,21 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--color-standard);
     margin-top: 12px;
     margin-bottom: 20px;
   }
   &__icon-social-media {
     @include icon-social-media;
-    fill: var(--kolor-standard);
+    fill: var(--color-standard);
   }
   &__circle {
-    @include circle;
+    @include circle(var(--diameter-icon-social));
   }
 
   &__circle:hover,
   &__circle:focus {
-    @include circlehf;
+    @include circle-transform;
   }
 
   &__sign-up {
@@ -78,7 +80,7 @@
 
   &__newsletter {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(var(--cien));
+    filter: drop-shadow(var(--shadow));
     border-radius: 4px;
     width: 358px;
     height: 50px;

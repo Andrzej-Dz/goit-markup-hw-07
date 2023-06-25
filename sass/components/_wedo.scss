@@ -9,7 +9,7 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--color-default);
     padding-bottom: 50px;
   }
 
@@ -28,7 +28,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--color-standard);
     padding-top: 27px;
     padding-bottom: 27px;
   }
@@ -38,6 +38,6 @@
   }
 
   &__pictures div div {
-    border: 1px solid var(--kolor-ramki-zdjec);
+    border: 1px solid var(--color-picture-frame);
   }
 }

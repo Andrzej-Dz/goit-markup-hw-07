@@ -1,7 +1,5 @@
-.custom {
-  &__space {
-    padding: 94px 0px;
-  }
+.our-customers {
+  padding: var(--space1) 0px;
 
   &__header {
     font-weight: 700;
@@ -9,7 +7,7 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--color-default);
     padding-bottom: 50px;
   }
 
@@ -23,18 +21,18 @@
     display: flex;
     width: 170px;
     height: 92px;
-    border: 1px solid var(--kolor-ikon);
+    border: 1px solid var(--color-icon);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    fill: var(--kolor-ikon);
+    fill: var(--color-icon);
   }
 
   &__box2:hover,
   &__box2:focus {
-    border-color: var(--kolor-logo);
-    fill: var(--kolor-logo);
+    border-color: var(--color-logo);
+    fill: var(--color-logo);
     transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: var(--f-czasu);
