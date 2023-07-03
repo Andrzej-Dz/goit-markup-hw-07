@@ -15,6 +15,9 @@
   --space1: 94px;
   --diameter-icon-social: 44px;
   --gap10: 10px;
+  --fontweightstandard: 400;
+  --fontweighttitle: 500;
+  --fontweightsectiontitle: 700;
 }
 
 * {
@@ -27,7 +30,7 @@ body {
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--fontweighttitle);
 }
 
 table {
@@ -103,9 +106,8 @@ footer {
   text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 26px;
-  line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--color-logo);
 }
@@ -123,7 +125,6 @@ footer {
 .main-header__link {
   text-decoration: none;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--color-default);
   position: relative;
@@ -141,9 +142,8 @@ footer {
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--fontweighttitle);
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--color-contact);
 }
@@ -189,11 +189,8 @@ footer {
 }
 
 .poster {
-  text-align: center;
   background-color: var(--kolor-stopka);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: url("../images/tlo.png");
+  height: 600px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tlo.png");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tlo.png");
 }
@@ -201,15 +198,29 @@ footer {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  gap: 30px;
 }
 
 .team {
   padding: 94px 0px;
 }
 .team__header {
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 36px;
-  line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-default);
@@ -231,18 +242,16 @@ footer {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team__group-name {
-  font-weight: 500;
+  font-weight: var(--fontweighttitle);
   font-size: 16px;
-  line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-default);
   margin-top: 30px;
 }
 .team__group-title {
-  font-weight: 400;
+  font-weight: var(--fontweightstandard);
   font-size: 16px;
-  line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
@@ -303,7 +312,6 @@ footer {
 .our-customers__header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-default);
@@ -367,7 +375,6 @@ footer {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--color-logo);
 }
@@ -378,28 +385,25 @@ footer {
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--color-contact);
 }
 .foooter__contact-address {
   padding-top: 20px;
-  font-weight: 400;
+  font-weight: var(--fontweightstandard);
   font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--color-standard);
 }
 .foooter__contact-details {
   letter-spacing: 0.03em;
-  font-weight: 400;
+  font-weight: var(--fontweightstandard);
 }
 .foooter__join-us {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-standard);
@@ -455,9 +459,8 @@ footer {
   border-radius: 4px;
   width: 358px;
   height: 50px;
-  font-weight: 400;
+  font-weight: var(--fontweightstandard);
   font-size: 16px;
-  line-height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,9 +477,8 @@ footer {
   height: 38px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--fontweighttitle);
   font-size: 16px;
-  line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
   background: var(--color-btn-not-activ);
@@ -505,23 +507,22 @@ footer {
   display: -ms-flexbox;
   display: flex;
   font-family: "Roboto";
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 16px;
   color: var(--color-standard);
   background-color: var(--color-logo);
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
   border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: inline;
-  font-style: bold;
-  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  padding: 10px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.06em;
 }
 
 .btn-poster {
@@ -529,22 +530,21 @@ footer {
   display: -ms-flexbox;
   display: flex;
   font-family: "Roboto";
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 16px;
   color: var(--color-standard);
   background-color: var(--color-logo);
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
   border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-style: normal;
-  line-height: 30px;
-  padding-left: 42px;
-  padding-right: 41px;
-  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.06em;
 }
 
@@ -553,32 +553,26 @@ footer {
   display: -ms-flexbox;
   display: flex;
   font-family: "Roboto";
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 16px;
   color: var(--color-standard);
   background-color: var(--color-logo);
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
   border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 24px;
-  font-style: bold;
-  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  padding-left: 42px;
-  fill: var(--color-standard);
-}
-.btn-sign__.icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  letter-spacing: 0.06em;
+  padding-left: 42px;
+  gap: 24px;
+}
+.btn-sign__icon {
   fill: var(--color-standard);
 }
 
@@ -597,7 +591,7 @@ footer {
 .form {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--fontweightstandard);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -644,7 +638,6 @@ footer {
 .form__field label, .form__field input, .form__field textarea {
   width: 100%;
   font-size: 12px;
-  line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--color-contact);
 }
@@ -684,7 +677,6 @@ footer {
   padding-left: 18px;
   font-size: 14px;
   letter-spacing: 0.03em;
-  line-height: 24px;
   color: var(--color-contact);
 }
 .form__regulation a {
@@ -783,20 +775,19 @@ input[type=checkbox]:not(:checked) ~ svg.form__checkbox-accepted {
           align-items: center;
 }
 .section-ipsum__header {
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-default);
   margin-bottom: 10px;
 }
 .section-ipsum__text {
-  font-weight: 400;
+  font-weight: var(--fontweightstandard);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--color-kontakt);
+  color: var(--color-contact);
 }
 .section-ipsum__icon {
   fill: var(--color-black);
@@ -806,9 +797,8 @@ input[type=checkbox]:not(:checked) ~ svg.form__checkbox-accepted {
   padding-bottom: var(--space1);
 }
 .we-do__header {
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 36px;
-  line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-default);
@@ -828,9 +818,8 @@ input[type=checkbox]:not(:checked) ~ svg.form__checkbox-accepted {
   top: -70px;
   width: 370px;
   background: rgba(47, 48, 58, 0.8);
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 14px;
-  line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -877,9 +866,8 @@ input[type=checkbox]:not(:checked) ~ svg.form__checkbox-accepted {
 }
 .modal__header {
   margin-bottom: 12px;
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 20px;
-  line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-default);
@@ -961,7 +949,7 @@ input[type=checkbox]:not(:checked) ~ svg.form__checkbox-accepted {
   overflow: hidden;
 }
 .sec-portf__pictures div div {
-  border: 1px solid var(--color-ramki-zdjec);
+  border: 1px solid var(--color-picture-frame);
 }
 .sec-portf__pictures > div:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -991,18 +979,16 @@ input[type=checkbox]:not(:checked) ~ svg.form__checkbox-accepted {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 4px;
-  font-weight: 700;
+  font-weight: var(--fontweightsectiontitle);
   font-size: 18px;
-  line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
 }
 .sec-portf__picture-describ {
   padding-left: 24px;
   padding-bottom: 20px;
-  font-weight: 400;
+  font-weight: var(--fontweightstandard);
   font-size: 16px;
-  line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1025,7 +1011,7 @@ input[type=checkbox]:not(:checked) ~ svg.form__checkbox-accepted {
 .overlay p {
   padding: 49px 45px 49px 24px;
   margin: 0;
-  font-weight: 400;
+  font-weight: var(--fontstandard);
   font-size: 18px;
   letter-spacing: 0.03em;
   color: var(--color-standard);

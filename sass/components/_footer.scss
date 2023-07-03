@@ -16,7 +16,6 @@ $xyz: 44px;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
     letter-spacing: 0.03em;
     color: var(--color-logo);
   }
@@ -29,31 +28,28 @@ $xyz: 44px;
     text-decoration: none;
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--fontweightsectiontitle);
     font-size: 14px;
-    line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--color-contact);
   }
 
   &__contact-address {
     padding-top: 20px;
-    font-weight: 400;
+    font-weight: var(--fontweightstandard);
     font-size: 14px;
-    line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--color-standard);
   }
 
   &__contact-details {
     letter-spacing: 0.03em;
-    font-weight: 400;
+    font-weight: var(--fontweightstandard);
   }
 
   &__join-us {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-standard);
@@ -84,9 +80,8 @@ $xyz: 44px;
     border-radius: 4px;
     width: 358px;
     height: 50px;
-    font-weight: 400;
+    font-weight: var(--fontweightstandard);
     font-size: 16px;
-    line-height: 20px;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
